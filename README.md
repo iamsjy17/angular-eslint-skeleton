@@ -37,7 +37,7 @@ npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier
 
 - eslint: ESLint 라이브러리
 - eslint-config-airbnb-base: airbnb style guide 적용
-- eslint-plugin-import:
+- eslint-plugin-import: ES2015 import/export문 관련 lint 
 - @typescript-eslint/eslint-plugin: Typescript에 관련된 ESLint 룰 추가
 - @typescript-eslint/parser: typescript를 파싱하기 위해 사용한다.
 - prettier: Prettier 라이브러리
@@ -75,7 +75,6 @@ Airbnb 규칙은 엄격하므로 사용하는 스타일에 따라서 룰을 수�
   },
   "settings": {
     "import/resolver": {
-      // typescript 확장자 경로를 제대로 인식하지 못해서 에러가 발생할 수 있다. 아래와 같이 세팅한다.
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
